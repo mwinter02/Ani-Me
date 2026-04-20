@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.DS_Store
+
+# Pipeline outputs
+*.bvh
+*.fbx
+
+# Data directory — contents are not committed (too large / machine-specific)
+# Folder structure is preserved via .gitkeep files
+data/frames/*
+data/output/*
+!data/frames/.gitkeep
+!data/output/.gitkeep
+
+# Camera calibration — machine-specific, do not commit
+data/calibration.npz
+calibration.npz
+calib_images/
+
+# Model weights / large files (do not commit — see setup.sh for download instructions)
+*.pkl
+*.pt
+*.pth
+smpl_model_data/
+
