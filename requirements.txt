@@ -1,0 +1,23 @@
+# Core
+numpy
+scipy
+opencv-contrib-python
+
+# PyTorch — install latest for Mac MPS / CUDA support
+torch
+torchvision
+
+# Pose estimation
+# Note: setuptools must be <82 (torch 2.x constraint)
+# Note: simple_romp and chumpy must be installed with --no-build-isolation (needs venv Cython/pip)
+#   pip install chumpy --no-build-isolation
+#   pip install simple_romp==1.1.4 --no-build-isolation
+setuptools<82
+cython
+lapx
+chumpy
+simple_romp==1.1.4
+
+# SMPL body model
+smplx
+
